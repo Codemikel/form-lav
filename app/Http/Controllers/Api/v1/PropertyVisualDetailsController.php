@@ -21,7 +21,7 @@ class PropertyVisualDetailsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        PropertyVisualDetails::create($request->all());
     }
 
     /**

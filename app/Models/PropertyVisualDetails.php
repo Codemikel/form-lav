@@ -12,6 +12,7 @@ class PropertyVisualDetails extends Model
     public $timestamps = false;
 
     protected $fillable = [
+        'property_id',
         'structure',
         'porosity',
         'color',
