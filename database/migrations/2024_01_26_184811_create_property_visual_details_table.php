@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('property_visual_details', function (Blueprint $table) {
             $table->unsignedBigInteger('property_id');
-            $table->foreign('property_id')->references('id')->on('properties');
+            $table->foreign('property_id')->references('id')->on('properties')->onDelete('cascade');
             $table->float('structure');
             $table->float('porosity');
             $table->float('color');
